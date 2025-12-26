@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(197, 197, 197);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: rgb(37, 37, 37);
+    color: rgb(197, 197, 197);
+    padding: 40px 0;
+    text-align: center;
+}
+
+header h1{
+    font-size: 3rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+main .container{
+    padding: 20px;
+}
+
+main .container h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+footer{
+    background-color: rgb(37, 37, 37);
+    padding: 20px 0;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p{
+    text-align: center;
+}
