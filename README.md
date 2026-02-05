@@ -4,4 +4,4 @@
 * HTML5
 * CSS3
 * JavaScript
-### Segue o link para acesso: 
+### Segue o link para acesso: https://pedro-rocha-araujo.github.io/projeto-jogo-de-dados/
