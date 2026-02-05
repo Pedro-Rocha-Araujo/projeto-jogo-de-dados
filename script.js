@@ -1,70 +1,17 @@
-let jogada1 = Math.round(Math.random()*6)
-let jogada2 = Math.round(Math.random()*6)
+let jogada1 = Math.floor(Math.random()*6)+1
+let jogada2 = Math.floor(Math.random()*6)+1
 
 let imagem1 = document.querySelector("#img1")
 let imagem2 = document.querySelector("#img2")
 
 let resultado = document.querySelector("#resultado")
 
+
+
 // Mudança na primeira imagen
-
-if(jogada1 === 1){
-    imagem1.setAttribute("src", "./img/dice1.png")
-    imagem1.setAttribute("alt", "O primeiro jogador tirou o número 1")
-}
-if(jogada1 === 2){
-    imagem1.setAttribute("src", "./img/dice2.png")
-    imagem1.setAttribute("alt", "O primeiro jogador tirou o número 2")
-}
-if(jogada1 === 3){
-    imagem1.setAttribute("src", "./img/dice3.png")
-    imagem1.setAttribute("alt", "O primeiro jogador tirou o número 3")
-}
-if(jogada1 === 4){
-    imagem1.setAttribute("src", "./img/dice4.png")
-    imagem1.setAttribute("alt", "O primeiro jogador tirou o número 4")
-}
-if(jogada1 === 5){
-    imagem1.setAttribute("src", "./img/dice5.png")
-    imagem1.setAttribute("alt", "O primeiro jogador tirou o número 5")
-}
-if(jogada1 === 6){
-    imagem1.setAttribute("src", "./img/dice6.png")
-    imagem1.setAttribute("alt", "O primeiro jogador tirou o número 6")
-}
-
-// Mudança na segunda imagem
-
-if(jogada2 === 1){
-    imagem2.setAttribute("src", "./img/dice1.png")
-    imagem2.setAttribute("alt", "O segundo jogador tirou o número 1")
-}
-
-if(jogada2 === 2){
-    imagem2.setAttribute("src", "./img/dice2.png")
-    imagem2.setAttribute("alt", "O segundo jogador tirou o número 2")
-}
-
-if(jogada2 === 3){
-    imagem2.setAttribute("src", "./img/dice3.png")
-    imagem2.setAttribute("alt", "O segundo jogador tirou o número 3")
-}
-
-if(jogada2 === 4){
-    imagem2.setAttribute("src", "./img/dice4.png")
-    imagem2.setAttribute("alt", "O segundo jogador tirou o número 4")
-}
-
-if(jogada2 === 5){
-    imagem2.setAttribute("src", "./img/dice5.png")
-    imagem2.setAttribute("alt", "O segundo jogador tirou o número 5")
-}
-
-if(jogada2 === 6){
-    imagem2.setAttribute("src", "./img/dice6.png")
-    imagem2.setAttribute("alt", "O segundo jogador tirou o número 6")
-}
-
+imagem1.setAttribute("src", "./img/dice"+jogada1+".png")
+// Mudança na segunda imagen
+imagem2.setAttribute("src", "./img/dice"+jogada2+".png")
 // Condições de vitória ou empate
 
 if(jogada1 > jogada2){
